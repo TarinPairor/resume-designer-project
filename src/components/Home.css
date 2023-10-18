@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Make the container's children stack vertically */
+}
+
+.contact-form {
+  display: block;
+  flex-direction: column;
+  margin-bottom: 2px; /* Add spacing between the contact-form and other fields */
+}

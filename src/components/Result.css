@@ -1,0 +1,27 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  max-width: 30px;
+}
+
+.contact-form h3 {
+  margin: 10px 0;
+}
+
+.phone-number,
+.email,
+.facebook,
+.linkedin {
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+
+.phone-number svg,
+.email svg,
+.facebook svg,
+.linkedin svg {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
