@@ -4,7 +4,7 @@
 }
 
 .contact-form {
-  display: block;
+  display: flex;
   flex-direction: column;
-  margin-bottom: 2px; /* Add spacing between the contact-form and other fields */
+  margin-bottom: 20px;
 }

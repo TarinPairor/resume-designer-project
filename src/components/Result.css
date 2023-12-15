@@ -1,9 +1,16 @@
+.container {
+  border-top: 1px solid #bbb; /* Add a vertical line on the right of the contact-form */
+  padding-right: 10px; /* Add spacing between the vertical line and the contact-form content */
+  margin-right: 500px; /* Add spacing between the contact-form and other fields */
+}
+
 .contact-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
-  text-align: center;
+  text-align: left;
   max-width: 30px;
+  white-space: nowrap;
 }
 
 .contact-form h3 {
@@ -13,15 +20,40 @@
 .phone-number,
 .email,
 .facebook,
-.linkedin {
+.linkedin,
+.address {
   display: flex;
   align-items: center;
   font-size: small;
+  font-weight: initial;
+  padding-left: 10px; /* Add spacing to the left of each item in the contact-form */
+  margin: -10px;
 }
 
 .phone-number svg,
 .email svg,
 .facebook svg,
-.linkedin svg {
+.linkedin svg,
+.address svg {
   margin-right: 10px; /* Adjust the margin as needed */
+  align-items: center;
+}
+.phone-number p,
+.email p,
+.facebook p,
+.linkedin p,
+.address p {
+  margin: 1; /* Remove margin for paragraph elements to keep text and value on the same line */
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-left: 30px; /* Add spacing between the vertical line and the other information */
+}
+
+.other-info {
+  max-width: 70%; /* Adjust this percentage as needed */
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }

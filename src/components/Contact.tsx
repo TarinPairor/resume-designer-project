@@ -1,10 +1,6 @@
 import { TextField } from "@mui/material";
-interface ContactData {
-  phoneNumber: string;
-  email: string;
-  facebook: string;
-  linkedin: string;
-}
+import { ContactData } from "../interfaces/ContactData";
+import "./Contact.css";
 
 // Define a prop interface for Contact component
 interface ContactProps {
@@ -14,7 +10,8 @@ interface ContactProps {
 
 function Contact({ contactData, setContactData }: ContactProps) {
   return (
-    <div>
+    <div className="container">
+      <h4>Personal Details</h4>
       <TextField
         type="text"
         label="Phone Number"
@@ -45,6 +42,14 @@ function Contact({ contactData, setContactData }: ContactProps) {
         value={contactData.linkedin}
         onChange={(e) =>
           setContactData({ ...contactData, linkedin: e.target.value })
+        }
+      />
+      <TextField
+        type="text"
+        label="Address"
+        value={contactData.address}
+        onChange={(e) =>
+          setContactData({ ...contactData, address: e.target.value })
         }
       />
     </div>
